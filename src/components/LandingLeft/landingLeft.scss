@@ -1,0 +1,113 @@
+.LandingLeft{
+    width: 70%;
+    background-color: #ffff;
+    height: inherit;
+    @media screen and (max-width: 1024px) {
+       width: 100%;
+      }
+    header{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-left: 30px;
+            width: 180px;
+        }
+    }
+    &-main{
+        height: calc(100% - 75px);
+        min-height: 600px;
+        display: flex;
+        margin-left: 8%;
+        align-items: center;
+    }
+    &-main-content{
+        font-size: 1.8rem;
+
+        &-text{
+            &-name{
+                margin-bottom: 10px;
+            }
+            &-greeting{
+                font-size: 2rem;
+                letter-spacing: 0.5px;
+                font-weight: 600;
+            }
+            &-congrats,&-response{
+                font-size: 1.1rem;
+            }
+            &-congrats{
+                margin-bottom: 8%;
+            }
+            &-links{
+                margin-top: 8%;
+                font-size: 1rem;
+                color: #9da6af;
+                span{
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: #9da6af;
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #1600e5;
+                    }
+                }
+            }
+        }
+        &-buttons{
+            margin-top: 5%;
+            font-size: 1.1rem;
+            
+            span{
+                border-radius: 5px;
+                padding: 7px 20px;
+                cursor: pointer;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+            &-skip{
+                color: #8b8ba7;
+                background-color: rgb(250, 250, 250);
+                margin-right: 10px;
+                &:hover{
+                    background-color: transparent;
+                }
+            }
+            &-continue{
+                background-color: #1600e5;
+                color: #ffff;
+                &:hover{
+                    background-color: #3b27f0;
+                }
+            }
+        }
+    }
+}
+.help{
+    text-align: center;
+    position: absolute;
+    right: 2%;
+    top: 90%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    // justify-content: center;
+    border-radius: 30px 8px 30px 30px;
+    background-color: rgb(47, 46, 233);
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    z-index: 2147483647;
+    cursor: pointer;
+    height: 45px;
+    width: 125px;
+    padding-right: 5px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    
+    &:hover{
+        transform: scale(1.07);
+    }
+}
